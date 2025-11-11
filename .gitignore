@@ -1,0 +1,55 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data (NO subir datos sensibles)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.dta
+data/processed/*.csv
+*.sav
+*.dta
+
+# Models
+models/trained/*.pkl
+models/trained/*.joblib
+models/trained/*.h5
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Secrets
+.env
+config/secrets.yaml

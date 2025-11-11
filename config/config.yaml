@@ -1,0 +1,29 @@
+﻿# Project Configuration
+project:
+  name: "Pension 65 Predictive Targeting"
+  author: "Fernando Ramires Pacori"
+  version: "1.0.0"
+
+# Paths
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  models: "models/trained"
+  reports: "reports"
+
+# Data sources
+data_sources:
+  enaho_url: "https://proyectos.inei.gob.pe/microdatos/"
+  sisfoh_contact: "bmadueno@pension65.gob.pe"
+
+# Model parameters
+model:
+  test_size: 0.3
+  random_state: 42
+  cv_folds: 5
+
+# Feature engineering
+features:
+  categorical: ["zona", "material_pared", "material_techo"]
+  numerical: ["edad", "tamaño_hogar", "ingreso_percapita"]
+  target: "elegible_pension65"
